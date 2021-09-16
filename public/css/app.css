@@ -55,7 +55,7 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 }
 
 body {
-  background-color: white;
+  background-color: rgb(12, 12, 70);
   margin: 0;
   font-family: "Nunito", sans-serif;
   font-size: 0.9rem;

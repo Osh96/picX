@@ -78,7 +78,7 @@
                                     <th scope="col">Model</th>
                                     <th scope="col">Milage (Km)</th>
                                     <th scope="col">Type</th>
-                                    <th scope="col">Type</th>
+                                    {{-- <th scope="col">Type</th> --}}
                                     <th scope="col">Action</th>
                                 </tr>
                             </thead>
@@ -90,7 +90,6 @@
                                         <td>{{ $data->model }}</td>
                                         <td>{{ $data->milage }}</td>
                                         <td>{{ $data->type }}</td>
-                                        <td>{{ $data->type()->pluck('name')->implode(', ') }}</td>
                                         {{-- <td>{{ implode(',',$data->type()->get()->pluck('name')->toArray(),) }}</td> --}}
                                         <td>
                                             <form action="{{ route('manage.vehicle.destroy', $data) }}" method="POST">

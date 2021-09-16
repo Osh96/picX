@@ -56,7 +56,7 @@ class AuthServiceProvider extends ServiceProvider
 
         //route-access
         Gate::define('manage-packages', function($user){
-            return $user->hasAnyRoles(['admin','officer']);
+            return $user->hasAnyRoles(['officer']);
         });   
 
         //action-access
@@ -75,7 +75,7 @@ class AuthServiceProvider extends ServiceProvider
 
         //route-access
         Gate::define('manage-vehicles', function($user){
-            return $user->hasAnyRoles(['admin','officer']);
+            return $user->hasAnyRoles(['admin','officer','driver']);
         }); 
         
         // //route-access
